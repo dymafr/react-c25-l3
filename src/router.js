@@ -51,7 +51,6 @@ export const router = createBrowserRouter([
               {
                 path: 'edit/:recipeId',
                 element: <AdminRecipesForm />,
-                loader: async ({ params: { recipeId } }) => getRecipe(recipeId),
               },
               {
                 index: true,
